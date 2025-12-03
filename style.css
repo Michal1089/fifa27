@@ -1,0 +1,40 @@
+body{
+    background-image: url("img/bg2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+img {
+    position: absolute;
+    height: 150px;
+}
+
+#player{
+    left: 0;
+    top: 50vh;
+}
+
+#player2{
+    left: 95vw;
+    top: 50vh;
+}
+
+#ball{
+    left: 48vw;
+    top: 60vh;
+    height: 80px;
+}
+
+#a, #b{
+    position: absolute;
+    height: 150px;
+    top: 50vh;
+    left: 0;
+}
+
+#b{
+    left: 95vw;
+}
