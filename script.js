@@ -226,6 +226,26 @@ function updateBall() {
     } else {
         ballX += ballSpeedX;
         ballY += ballSpeedY;
+
+        const ballSize = 50;
+
+        if (ballX <= 0) {
+            ballX = 0;
+            ballSpeedX *= -1;
+        }
+        if (ballX + ballSize >= window.innerWidth) {
+            ballX = window.innerWidth - ballSize;
+            ballSpeedX *= -1;
+        }
+        if (ballY <= 0) {
+            ballY = 0;
+            ballSpeedY *= -1;
+        }
+        if (ballY + ballSize >= window.innerHeight) {
+            ballY = window.innerHeight - ballSize;
+            ballSpeedY *= -1;
+        }
+
         ballSpeedX *= friction;
         ballSpeedY *= friction;
     }
@@ -234,6 +254,7 @@ function updateBall() {
     ball.style.top = ballY + "px";
     checkGoal();
 }
+
 
 function gameLoop() {
     if (gameRunning && !isPaused) {
