@@ -22,8 +22,10 @@ img {
 }
 
 .logo{
-    top: -25px;
-    left: 0;
+    top: 25px;
+    left: 30px;
+    width: 130px;
+    height: 40px;
 }
 
 #player{
@@ -40,6 +42,7 @@ img {
     left: 48vw;
     top: 50vh;
     height: 80px;
+    z-index: 1;
 }
 
 #a, #b{
